@@ -1,0 +1,318 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Húmero</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#fff3e0,#ffcc80);
+    color:#5d4037;
+    line-height:1.6;
+}
+
+/* ENCABEZADO */
+
+.header-top{
+    background:#ef6c00;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-area img{
+    width:70px;
+}
+
+.autor{
+    font-weight:bold;
+}
+
+/* PORTADA */
+
+header{
+    background:linear-gradient(90deg,#ffb74d,#ef6c00);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+/* CONTENIDO */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+h2{
+    color:#ef6c00;
+    border-left:6px solid #ff9800;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.highlight{
+    background:#fff3e0;
+    border-left:5px solid #ff9800;
+    padding:15px;
+    border-radius:10px;
+}
+
+/* IMAGEN */
+
+.imagen-central{
+    text-align:center;
+    margin-top:20px;
+}
+
+.imagen-central img{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+.imagen-central h3{
+    margin-top:10px;
+    color:#ef6c00;
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+
+footer{
+    background:#ef6c00;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header-top">
+
+    <div class="logo-area">
+        <img src="TECBA.png" alt="Logo TECBA">
+        <h3>Tecnológico Boliviano Alemán</h3>
+    </div>
+
+    <div class="autor">
+        Por: Jhery Quito Rivera
+    </div>
+
+</div>
+
+<header>
+
+    <h1>Húmero</h1>
+
+    <p>Huesos de los Miembros Superiores</p>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Ubicación</h2>
+
+        <p>
+            El húmero es un hueso largo que forma el esqueleto del brazo.
+            Se extiende desde el hombro hasta el codo y constituye el único hueso del brazo.
+        </p>
+
+        <div class="imagen-central">
+
+            <img src="ubicacion.jpeg" alt="Ubicación del Húmero">
+
+            <h3>Ubicación del Húmero</h3>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Funciones</h2>
+
+        <div class="highlight">
+
+            <ul>
+                <li>Forma el esqueleto del brazo.</li>
+                <li>Permite movimientos del hombro y codo.</li>
+                <li>Sirve de inserción para músculos.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h2>Articulaciones</h2>
+
+            <h3>Proximal (Arriba)</h3>
+
+            <ul>
+                <li>Con la cavidad glenoidea de la escápula.</li>
+                <li>Forma la articulación glenohumeral (hombro).</li>
+            </ul>
+
+            <h3>Distal (Abajo)</h3>
+
+            <ul>
+                <li>Con el radio y la ulna (cúbito).</li>
+                <li>Forma la articulación del codo.</li>
+            </ul>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Diáfisis (Cuerpo)</h2>
+
+            <ul>
+                <li>Tuberosidad deltoidea: inserción del deltoides.</li>
+                <li>Surco radial: paso del nervio radial.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Epífisis Proximal</h2>
+
+        <ul>
+            <li>Cabeza humeral: se articula con la escápula.</li>
+            <li>Tubérculo mayor: inserción de supraespinoso, infraespinoso y redondo menor.</li>
+            <li>Tubérculo menor: inserción del subescapular.</li>
+            <li>Surco intertubercular: pasa el tendón del bíceps.</li>
+            <li>Cuello quirúrgico: zona frecuente de fracturas.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Epífisis Distal</h2>
+
+        <ul>
+            <li>Tróclea: se articula con la ulna.</li>
+            <li>Capítulo (Capitulum): se articula con el radio.</li>
+            <li>Epicóndilo medial: inserción de músculos flexores.</li>
+            <li>Epicóndilo lateral: inserción de músculos extensores.</li>
+        </ul>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h2>Inervación Relacionada</h2>
+
+            <ul>
+                <li>Nervio axilar: cuello quirúrgico.</li>
+                <li>Nervio radial: surco radial.</li>
+                <li>Nervio cubital: detrás del epicóndilo medial.</li>
+            </ul>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Irrigación</h2>
+
+            <ul>
+                <li>Arteria circunfleja humeral anterior.</li>
+                <li>Arteria circunfleja humeral posterior.</li>
+                <li>Arteria braquial profunda.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Movimientos en los que Participa</h2>
+
+        <ul>
+            <li>Flexión.</li>
+            <li>Extensión.</li>
+            <li>Abducción.</li>
+            <li>Aducción.</li>
+            <li>Rotación interna.</li>
+            <li>Rotación externa.</li>
+            <li>Circunducción.</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<footer>
+Anatomía Humana • Húmero • Tecnológico Boliviano Alemán
+</footer>
+
+</body>
+</html>
+```
